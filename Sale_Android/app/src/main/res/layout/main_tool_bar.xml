@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<asia.covisoft.bsandroid.wawidget.WAToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_toolbar"
+    style="@style/ToolbarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center" />
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/menuBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8dp"
+            style="?attr/buttonBarStyle"
+            android:foreground="?attr/selectableItemBackground">
+
+            <ImageButton
+                android:id="@+id/btnBasket"
+                style="?attr/buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/padding_4dp"
+                android:src="@drawable/ic_shopping_basket_white_24dp"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tvCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/bg_basket_count"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_10sp"
+                tools:ignore="RtlHardcoded" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</asia.covisoft.bsandroid.wawidget.WAToolbar>

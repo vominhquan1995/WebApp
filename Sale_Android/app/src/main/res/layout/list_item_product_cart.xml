@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardViewStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgProduct"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/banh_cuoi_1"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    android:id="@+id/tvName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="PRODUCT NAME"
+                    android:textColor="@color/colorTextPrimary"
+                    android:textSize="@dimen/textsize_16sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnRemove"
+                    style="?attr/buttonBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_clear_black_24dp" />
+            </LinearLayout>
+
+            <asia.covisoft.bsandroid.wawidget.WATextView
+                android:id="@+id/tvVariation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textsize_14sp" />
+
+            <asia.covisoft.bsandroid.wawidget.WATextView
+                android:id="@+id/tvPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="000.000 VNĐ"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/textsize_14sp" />
+
+            <com.bvhloc.numpicker.widget.NumberPicker
+                android:id="@+id/numberPicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:decrementDrawable="@drawable/ic_remove_circle_outline_red_500_36dp"
+                app:incrementDrawable="@drawable/ic_add_circle_outline_green_500_36dp"
+                app:keyboardInput="false"
+                app:numBackground="@drawable/bg_number_picker"
+                app:numSize="8sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,297 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BackgroundStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="asia.covisoft.bsandroid.fragment.SupportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvHotline"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/up_hot_line" />
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=": "
+                    tools:ignore="HardcodedText" />
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    android:id="@+id/tvHotline"
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvSendmail"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/up_email_support" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardCustomerCard"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/up_policy_customer_card" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardShoppingGuide"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/up_shopping_guide" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardPayments"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/up_payments" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardProductReturn"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/up_product_return" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvPrivacy"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/up_rules" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvAboutUs"
+            style="@style/CardViewContactStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_8dp"
+                tools:ignore="UseCompoundDrawables">
+
+                <asia.covisoft.bsandroid.wawidget.WATextView
+                    style="@style/TextViewSettingStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="@string/up_about_us" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/padding_4dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>

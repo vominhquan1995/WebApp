@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "494530243817",
+    "firebase_url": "https://webapp-efb98.firebaseio.com",
+    "project_id": "webapp-efb98",
+    "storage_bucket": "webapp-efb98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494530243817:android:3d905cc3070a2002",
+        "android_client_info": {
+          "package_name": "asia.covisoft.bsandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494530243817-kqo8epgd0idd3o4dm7honcoiirnhtr2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKTSBNV1_LbU2-7u2nbhooHwv6n4tAhao"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

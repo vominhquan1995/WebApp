@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textsize_14sp">11sp</dimen>
+    <dimen name="textsize_16sp">13sp</dimen>
+    <dimen name="textsize_18sp">15sp</dimen>
+    <dimen name="slider_height">150dp</dimen>
+    <dimen name="textsize_10sp">7sp</dimen>
+    <dimen name="textsize_22sp">19sp</dimen>
+</resources>

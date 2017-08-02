@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Base.Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="4" />
+
+        <asia.covisoft.bsandroid.wawidget.WATextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="07/06/2016"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/textsize_10sp" />
+    </LinearLayout>
+
+    <asia.covisoft.bsandroid.wawidget.WATextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coen Jacobs"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/textsize_14sp"
+        android:textStyle="bold" />
+
+    <asia.covisoft.bsandroid.wawidget.WATextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is your comment"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/textsize_10sp" />
+
+</LinearLayout>

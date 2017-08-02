@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_home_black_36dp"
+            android:title="@string/app_name" />
+
+        <item
+            android:id="@+id/menu_product"
+            android:icon="@drawable/ic_products_black_36dp"
+            android:title="@string/up_product" />
+
+        <item
+            android:id="@+id/menu_basket"
+            android:icon="@drawable/ic_basket_black_36dp"
+            android:title="@string/up_basket" />
+
+        <item
+            android:id="@+id/menu_favorite"
+            android:icon="@drawable/ic_favorite_black_36dp"
+            android:title="@string/up_favorite"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/menu_notification"
+            android:icon="@drawable/ic_sms_failed_black_36dp"
+            android:title="@string/up_notifications" />
+
+        <item
+            android:id="@+id/menu_news"
+            android:icon="@drawable/ic_event_note_black_36dp"
+            android:title="@string/up_news" />
+
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/ic_settings_black_36dp"
+            android:title="@string/up_settings" />
+
+        <item
+            android:id="@+id/menu_contact"
+            android:icon="@drawable/ic_mail_black_36dp"
+            android:title="@string/up_contact" />
+
+        <item
+            android:id="@+id/menu_support"
+            android:icon="@drawable/ic_help_black_36dp"
+            android:title="@string/up_support" />
+    </group>
+</menu>

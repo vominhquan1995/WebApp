@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="city">
+        <item>Thành phố Hồ Chí Minh</item>
+        <item>Hà Nội</item>
+        <item>Đà Nẵng</item>
+        <item>Huế</item>
+    </array>
+    <array name="payment_method">
+        <item>Đăng nhập</item>
+        <item>Thanh toán không cần đăng nhập</item>
+    </array>
+</resources>

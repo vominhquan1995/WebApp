@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_payment_method"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_16dp">
+
+    <asia.covisoft.bsandroid.wawidget.WATextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/up_payment"
+        android:textColor="@color/colorTextPrimary"
+        android:textSize="@dimen/textsize_18sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/lvPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice" />
+
+</LinearLayout>

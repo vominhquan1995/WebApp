@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+    </style>
+
+    <style name="MYDIALOG" parent="android:Theme" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="BackgroundStyle">
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+    <style name="ToolbarStyle">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:padding">@dimen/padding_8dp</item>
+    </style>
+
+    <style name="CardViewStyle">
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardCornerRadius">@dimen/cardview_radius</item>
+        <item name="cardElevation">@dimen/cardview_elevation</item>
+        <item name="android:layout_margin">@dimen/margin_5dp</item>
+    </style>
+
+    <style name="CardViewContactStyle">
+        <item name="cardBackgroundColor">@color/colorWhite</item>
+        <item name="cardElevation">@dimen/cardview_elevation</item>
+        <item name="android:layout_marginBottom">@dimen/margin_1dp</item>
+    </style>
+
+    <style name="TextViewTitleStyle">
+        <item name="android:textSize">@dimen/textsize_18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:padding">@dimen/padding_8dp</item>
+    </style>
+
+    <style name="TextViewSettingStyle">
+        <item name="android:textSize">@dimen/textsize_14sp</item>
+        <item name="android:textColor">@color/colorTextPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

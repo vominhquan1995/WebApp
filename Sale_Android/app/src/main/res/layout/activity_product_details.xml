@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="asia.covisoft.bsandroid.activity.ProductDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardElevation="@dimen/cardview_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_4dp">
+
+                            <asia.covisoft.bsandroid.wawidget.WATextView
+                                android:id="@+id/tvName"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:textColor="?attr/colorAccent"
+                                android:textSize="@dimen/textsize_22sp"
+                                android:textStyle="bold" />
+
+                            <asia.covisoft.bsandroid.wawidget.WACardView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                app:cardCornerRadius="@dimen/wa_cardview_corner_radius">
+
+                                <asia.covisoft.bsandroid.wawidget.WATextView
+                                    android:id="@+id/tvPrice"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:padding="@dimen/margin_8dp"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/textsize_14sp"
+                                    android:textStyle="bold" />
+
+                            </asia.covisoft.bsandroid.wawidget.WACardView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/vDiscount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_4dp">
+
+                            <TextView
+                                android:id="@+id/tvRegularPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/textsize_14sp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <asia.covisoft.bsandroid.wawidget.WATextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/cap_discount"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="@dimen/textsize_14sp"
+                                    tools:ignore="RtlHardcoded" />
+
+                                <asia.covisoft.bsandroid.wawidget.WATextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=": "
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="@dimen/textsize_14sp"
+                                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                                <asia.covisoft.bsandroid.wawidget.WATextView
+                                    android:id="@+id/tvDiscountRate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorTextPrimary"
+                                    android:textSize="@dimen/textsize_14sp"
+                                    tools:ignore="RtlHardcoded" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.daimajia.slider.library.SliderLayout
+                            android:id="@+id/slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:fitsSystemWindows="true" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/padding_16dp">
+
+                            <asia.covisoft.bsandroid.wawidget.WARatingBar
+                                android:id="@+id/ratingBar"
+                                style="@style/Widget.AppCompat.RatingBar.Indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:numStars="5" />
+
+                            <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:background="@color/colorTextSecondary" />-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <com.bvhloc.numpicker.widget.NumberPicker
+                                    android:id="@+id/numberPicker"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal"
+                                    app:decrementDrawable="@drawable/ic_remove_circle_outline_red_500_36dp"
+                                    app:incrementDrawable="@drawable/ic_add_circle_outline_green_500_36dp"
+                                    app:keyboardInput="false"
+                                    app:numBackground="@drawable/bg_number_picker"
+                                    app:numSize="8sp" />
+
+                                <ImageView
+                                    android:id="@+id/btnAddCart"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="@dimen/padding_8dp"
+                                    android:src="@drawable/ic_add_shopping_cart_blue_500_24dp"
+                                    tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spnVariations"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvAttributes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            tools:listitem="@layout/list_item_product_attribute" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardElevation="@dimen/cardview_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <asia.covisoft.bsandroid.wawidget.WATextView
+                            style="@style/TextViewTitleStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/up_description" />
+
+                        <asia.covisoft.bsandroid.wawidget.WATextView
+                            android:id="@+id/tvDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/padding_4dp"
+                            android:textColor="@color/colorTextPrimary"
+                            android:textSize="@dimen/textsize_14sp"
+                            android:visibility="gone"
+                            tools:ignore="RtlHardcoded" />
+
+                        <im.delight.android.webview.AdvancedWebView
+                            android:id="@+id/wvDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_5dp"
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardElevation="@dimen/cardview_elevation">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lnlReview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <asia.covisoft.bsandroid.wawidget.WATextView
+                                style="@style/TextViewTitleStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cap_review" />
+
+                            <asia.covisoft.bsandroid.wawidget.WARatingBar
+                                android:id="@+id/rbrReview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:numStars="5"
+                                android:stepSize="1" />
+
+
+                            <EditText
+                                android:id="@+id/edtReview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:hint="@string/text_comment_hint"
+                                android:inputType="text" />
+
+                            <LinearLayout
+                                android:id="@+id/lnlAuthor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/edtAuthorName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:hint="@string/cap_name"
+                                    android:inputType="text"
+                                    android:lines="1" />
+
+                                <EditText
+                                    android:id="@+id/edtAuthorEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:hint="@string/cap_email"
+                                    android:inputType="textEmailAddress"
+                                    android:lines="1" />
+
+                            </LinearLayout>
+
+                            <asia.covisoft.bsandroid.wawidget.WAButton
+                                android:id="@+id/btnReview"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@color/colorAccent"
+                                android:text="@string/up_post" />
+
+                        </LinearLayout>
+
+                        <asia.covisoft.bsandroid.wawidget.WATextView
+                            android:id="@+id/tvShowReviews"
+                            style="@style/TextViewTitleStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_activity_product_detail_showreview" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvRating"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:listitem="@layout/list_item_rating" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</LinearLayout>
